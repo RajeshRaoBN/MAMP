@@ -5,11 +5,10 @@
  * Date: 28/8/18
  * Time: 5:56 PM
  */
-start_session();
-$name=$_SESSION['Name'];
+session_start();
+$_SESSION['Name']='mark';
+$_SESSION['Age']=21;
+$_SESSION['Weight']=45;
 
-echo 'Name: '.$_GET["stu_name"].'<br>';
-echo 'Age: '.$_GET["stu_age"].'<br>';
-echo 'Weight: '.$_GET["stu_weight"].'<br>';
-
+echo 'Done';
 ?>
